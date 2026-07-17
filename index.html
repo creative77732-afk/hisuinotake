@@ -32,13 +32,21 @@
       max-width: 90%;
       border-radius: 16px;
       margin: 20px 0;
-      cursor: pointer;
-      transition: transform 0.2s ease, opacity 0.2s ease;
     }
 
-    img:hover {
-      transform: scale(1.02);
-      opacity: 0.95;
+    button {
+      background-color: #1da1f2;
+      color: white;
+      font-size: 18px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #0d8de1;
     }
   </style>
 </head>
@@ -47,23 +55,20 @@
 
   <h1>ひすいのたけさんはいいぞ。</h1>
 
-  <img
-    id="tweetImage"
-    src="HLMDyBHbQAA6Nwi.jpg"
-    alt="ひすいのたけさん"
-  >
+  <img src="HLMDyBHbQAA6Nwi.jpg" alt="ひすいのたけさん">
+
+  <button id="tweetBtn">#ひすいのたけさんはいいぞ をポスト</button>
 
   <script>
-    document.getElementById("tweetImage").onclick = function () {
+    document.getElementById("tweetBtn").onclick = function () {
       const text = encodeURIComponent("#ひすいのたけさんはいいぞ");
       const url = encodeURIComponent("https://creative77732-afk.github.io/hisuinotake/");
-
-      window.open(
-        `https://x.com/intent/tweet?text=${text}&url=${url}`,
-        "_blank"
-      );
+      window.open(`https://x.com/intent/tweet?text=${text}&url=${url}`, "_blank");
     };
   </script>
 
 </body>
 </html>
+ひとつだけ注意点
+
+このコードだけでは、投稿時に必ず画像付きカードになるとは限りません。
