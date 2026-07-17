@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>巨大犬(Big brasts100)</title>
+  <title>ひすいのたけさんはいいぞ。</title>
+
   <style>
     body {
       font-family: sans-serif;
@@ -11,11 +12,13 @@
       background: #f8f8f8;
       padding: 30px;
     }
+
     img {
       max-width: 90%;
       border-radius: 16px;
       margin: 20px 0;
     }
+
     button {
       background-color: #1da1f2;
       color: white;
@@ -26,25 +29,25 @@
       cursor: pointer;
       transition: background 0.3s;
     }
+
     button:hover {
       background-color: #0d8de1;
     }
   </style>
 </head>
+
 <body>
 
-  <h1>#ひすいのたけさんはいいぞ。</h1>
+  <h1>ひすいのたけさんはいいぞ。</h1>
 
-  <!-- ★★★★★ ここを好きな画像URLに変更 ★★★★★ -->
-  <img src="https://github.com/creative77732-afk/bigyamainu2/blob/main/G3ote7KXwAAwv9A.jpg?raw=true" alt="画像">
-  <!-- ★★★★★ ここまで ★★★★★ -->
+  <!-- この画像は index.html と同じ場所に置く -->
+  <img src="HLMDyBHbQAA6Nwi.jpg" alt="ひすいのたけさん">
 
-  <!-- Twitterポストボタン -->
   <button id="tweetBtn">#ひすいのたけさんはいいぞ。をポスト</button>
 
   <script>
     document.getElementById("tweetBtn").onclick = function() {
-      const text = encodeURIComponent("#ひすいのたけさんはいいぞ。");
+      const text = encodeURIComponent("ひすいのたけさんはいいぞ。 #ひすいのたけさんはいいぞ。");
       const url = encodeURIComponent(window.location.href);
       window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, "_blank");
     };
