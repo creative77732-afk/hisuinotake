@@ -32,21 +32,13 @@
       max-width: 90%;
       border-radius: 16px;
       margin: 20px 0;
-    }
-
-    button {
-      background-color: #1da1f2;
-      color: white;
-      font-size: 18px;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 10px;
       cursor: pointer;
-      transition: background 0.3s;
+      transition: transform 0.2s ease, opacity 0.2s ease;
     }
 
-    button:hover {
-      background-color: #0d8de1;
+    img:hover {
+      transform: scale(1.02);
+      opacity: 0.95;
     }
   </style>
 </head>
@@ -55,15 +47,21 @@
 
   <h1>ひすいのたけさんはいいぞ。</h1>
 
-  <img src="HLMDyBHbQAA6Nwi.jpg" alt="ひすいのたけさん">
-
-  <button id="tweetBtn">#ひすいのたけさんはいいぞ をポスト</button>
+  <img
+    id="tweetImage"
+    src="HLMDyBHbQAA6Nwi.jpg"
+    alt="ひすいのたけさん"
+  >
 
   <script>
-    document.getElementById("tweetBtn").onclick = function () {
+    document.getElementById("tweetImage").onclick = function () {
       const text = encodeURIComponent("#ひすいのたけさんはいいぞ");
       const url = encodeURIComponent("https://creative77732-afk.github.io/hisuinotake/");
-      window.open(`https://x.com/intent/tweet?text=${text}&url=${url}`, "_blank");
+
+      window.open(
+        `https://x.com/intent/tweet?text=${text}&url=${url}`,
+        "_blank"
+      );
     };
   </script>
 
