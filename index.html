@@ -3,7 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>ひすいのたけさんはいいぞ。</title>
+
+  <!-- OGP -->
+  <meta property="og:title" content="ひすいのたけさんはいいぞ。">
+  <meta property="og:description" content="#ひすいのたけさんはいいぞ">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://creative77732-afk.github.io/hisuinotake/">
+  <meta property="og:image" content="https://creative77732-afk.github.io/hisuinotake/HLMDyBHbQAA6Nwi.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ひすいのたけさんはいいぞ。">
+  <meta name="twitter:description" content="#ひすいのたけさんはいいぞ">
+  <meta name="twitter:image" content="https://creative77732-afk.github.io/hisuinotake/HLMDyBHbQAA6Nwi.jpg">
+  <meta name="twitter:image:alt" content="ひすいのたけさん">
 
   <style>
     body {
@@ -40,16 +55,15 @@
 
   <h1>ひすいのたけさんはいいぞ。</h1>
 
-  <!-- この画像は index.html と同じ場所に置く -->
   <img src="HLMDyBHbQAA6Nwi.jpg" alt="ひすいのたけさん">
 
   <button id="tweetBtn">#ひすいのたけさんはいいぞ をポスト</button>
 
   <script>
-    document.getElementById("tweetBtn").onclick = function() {
+    document.getElementById("tweetBtn").onclick = function () {
       const text = encodeURIComponent("#ひすいのたけさんはいいぞ");
-      const url = encodeURIComponent(window.location.href);
-      window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, "_blank");
+      const url = encodeURIComponent("https://creative77732-afk.github.io/hisuinotake/");
+      window.open(`https://x.com/intent/tweet?text=${text}&url=${url}`, "_blank");
     };
   </script>
 
